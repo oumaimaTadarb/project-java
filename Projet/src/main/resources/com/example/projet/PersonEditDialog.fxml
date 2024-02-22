@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5f5f5;" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.PersonEditDialogController">
+   <children>
+      <GridPane layoutX="22.0" layoutY="51.0" prefHeight="235.0" prefWidth="562.0" style="-fx-border-color: #6B8E23; -fx-border-width: 2px;" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="51.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.20001220703125" minWidth="10.0" prefWidth="242.20001220703122" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.39996337890625" minWidth="10.0" prefWidth="307.79998779296875" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label style="-fx-padding: 10px;" text="Nom">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label style="-fx-padding: 10px;" text="Prénom" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label style="-fx-padding: 10px;" text="Date de naissance" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label style="-fx-padding: 10px;" text="Profession" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label style="-fx-padding: 10px;" text="Addresse" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label style="-fx-padding: 10px;" text="Code Postal" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="lastNameField" prefHeight="26.0" prefWidth="249.0" stylesheets="@DarkTheme.css" GridPane.columnIndex="1" />
+            <TextField fx:id="firstNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="birthdayField" prefWidth="286.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="professionField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="addressField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="postalCodeField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button defaultButton="true" layoutX="326.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: #6B8E23;" text="Ok" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="464.0" layoutY="314.0" mnemonicParsing="false" onAction="#hadeleCancel" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: #6B8E23;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
